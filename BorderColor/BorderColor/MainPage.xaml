@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BorderColor.MainPage">
+
+    <StackLayout Orientation="Vertical" Spacing="0">
+        <StackLayout Orientation="Horizontal" Margin="20" WidthRequest="120" HeightRequest="120" VerticalOptions="Start" HorizontalOptions="Start">
+            <Frame  Padding="0" CornerRadius="13" IsClippedToBounds="True" HasShadow="True" IsVisible="True" BorderColor="DarkGray"  >
+                <Image  Source="a3.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+            </Frame>
+            <Frame  Padding="0" CornerRadius="13" IsClippedToBounds="True" HasShadow="True" IsVisible="True" BorderColor="DarkGray"  >
+                <Image  Source="a2.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+            </Frame>
+        </StackLayout>
+        <StackLayout Margin="20"   WidthRequest="300"  VerticalOptions="Start" HorizontalOptions="Start">
+            <Frame  Padding="0" BorderColor="Silver" CornerRadius="13" IsClippedToBounds="True" HasShadow="False" Margin="7,0,7,0" Grid.Row="1">
+            <Frame.Padding>
+                <OnPlatform x:TypeArguments="Thickness" iOS="0" Android="1" />
+            </Frame.Padding>
+            <StackLayout  StackLayout.Orientation="Horizontal" Padding="0" Spacing="0" Margin="0">
+                <Grid HorizontalOptions="FillAndExpand" RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Entry  BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" PlaceholderColor="Black" Entry.TextColor="Black" FontSize="13" HorizontalOptions="FillAndExpand" ClearButtonVisibility="Never" HorizontalTextAlignment="Start"  VerticalOptions="Center" Margin="0"></Entry>
+                    <Image HorizontalOptions="End" Grid.Row="0" Grid.Column="1"  Source="search32_mob.png">
+                        <Image.Margin>
+                            <OnPlatform x:TypeArguments="Thickness" iOS="5,0,5,0" Android="5,0,5,5" />
+                        </Image.Margin>
+                    </Image>
+                </Grid>
+            </StackLayout>
+        </Frame>
+        </StackLayout>
+         <StackLayout Margin="20"   WidthRequest="300"  VerticalOptions="Start" HorizontalOptions="Start">
+            <Frame  Padding="0" BorderColor="Silver" CornerRadius="13" IsClippedToBounds="True" HasShadow="False" Margin="7,0,7,0" Grid.Row="1">
+          
+            <StackLayout  Padding="0" Spacing="0" Margin="0">
+                    <Label HorizontalOptions="CenterAndExpand" Text="Welcome to xamarin" Margin="3"></Label>
+            </StackLayout>
+        </Frame>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
